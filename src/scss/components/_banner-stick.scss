@@ -1,0 +1,27 @@
+.banner-stick {
+  &--content {
+    background-color: $cl-bg;
+    position: relative;
+    &-link {
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-stick {
+    &--title {
+      position: sticky;
+      top: $header-desktop-height;
+    }
+    &--content {
+      background-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.ss-pagination {
+  @include txt-h3;
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: 768px) {
+    min-height: 225px;
+  }
+  a.page-link,
+  span.page-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 0.5rem;
+    margin-right: 0.5rem;
+    &.current {
+      opacity: 0.3;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+<h3 class="txt-p"><?php block_field( 'title' ); ?></h3>

@@ -1,0 +1,50 @@
+.txt-h1 {
+  @include txt-h1;
+}
+
+.txt-h2 {
+  @include txt-h2;
+}
+
+.txt-h3 {
+  @include txt-h3;
+}
+
+.txt-p {
+  @include txt-p;
+}
+
+.txt-p-big {
+  @include txt-p-big;
+}
+
+.txt-p-large {
+  @include txt-p-large;
+}
+
+.txt-tech {
+  @include txt-tech;
+}
+
+.txt-h-span {
+  @include txt-h-span ;
+}
+
+.badged-text {
+  vertical-align: middle;
+  &.mod-inherit {
+    &:before {
+      font-size: 68.75%;
+      margin-right: 0.25rem;
+      @media (min-width: 768px) {
+        font-size: 80%;
+      }
+    }
+  }
+  &:before {
+    content: attr(data-badge);
+    @include txt-tech;
+    font-style: normal;
+    margin-right: 0.25rem;
+  }
+}

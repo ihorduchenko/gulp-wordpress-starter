@@ -1,0 +1,33 @@
+// Vendors
+@import "bootstrap/bootstrap-reboot";
+@import "bootstrap/bootstrap-grid";
+@import "select2/core";
+@import "vendors/swiper";
+
+// Common
+@import "variables";
+@import "base";
+@import "colors";
+@import "fonts";
+
+// Components
+@import "components/typography";
+@import "components/buttons";
+@import "components/product-tile";
+@import "components/banner-stick";
+@import "components/tiles";
+@import "components/accordion";
+@import "components/forms";
+@import "components/woocommerce"; 
+@import "components/pagination"; 
+
+// Sections
+@import "sections/header";
+@import "sections/cart";
+@import "sections/footer";
+@import "sections/hero";
+@import "sections/instafeed"; 
+
+// Pages
+@import "pages/product";
+@import "pages/content"; 

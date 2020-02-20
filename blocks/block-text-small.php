@@ -1,0 +1,1 @@
+<div class="txt-tech mb-3"><?php block_field( 'text' ); ?></div>

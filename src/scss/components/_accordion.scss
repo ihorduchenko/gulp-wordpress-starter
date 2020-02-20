@@ -1,0 +1,43 @@
+.ss-accordion {
+  &--header {
+    &-toggle {
+      position: relative;
+      @include btn-reset;
+      text-align: left;
+      padding: 0.625rem 1.05rem 0.625rem 0;
+      &:after {
+        content: '';
+        @include trn-03;
+        position: absolute;
+        display: inline-block;
+        background-image: url($icon-close);
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+        width: 1.5em;
+        height: 1.5em;
+        right: 0;
+        top: 0.625rem;
+      }
+      &:active, 
+      &:focus {
+        color: initial;
+      }
+      &[aria-expanded="false"] {
+        &:after {
+          transform: rotate(135deg);
+        }
+      }
+    }
+  }
+  &--body {
+    padding-bottom: 0.625rem;
+  }
+}
+
+[data-toggle=collapse] {
+  &[aria-expanded=true] {
+    .collapse-indicator {
+      transform: rotate(180deg);
+    }
+  }
+}

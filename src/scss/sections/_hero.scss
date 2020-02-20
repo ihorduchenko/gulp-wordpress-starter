@@ -1,0 +1,18 @@
+.hero {
+  position: relative;
+  &-bg {
+    min-height: calc(90vh - #{$header-mobile-height});
+    @media (min-width: 768px) {
+      min-height: calc(100vh - #{$header-desktop-height});
+    }
+  }
+  &-content {
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

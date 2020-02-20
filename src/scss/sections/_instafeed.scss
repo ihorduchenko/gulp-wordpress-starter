@@ -1,0 +1,51 @@
+.sec-instafeed {
+  position: relative;
+  &--tile {
+    background-color: $cl-bg;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sec-instafeed {
+    position: relative;
+    &--tile {
+      min-height: 0;
+      position: absolute;
+      right: 25%;
+      top: 0;
+      z-index: 50;
+      padding-bottom: 25%;
+      width: 50%;
+    }
+    &--info {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  
+  .sec-instafeed #sb_instagram #sbi_images .sbi_item:nth-child(1) {
+    margin-right: 50% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .sec-instafeed {
+    min-height: 50vw;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+  #sb_instagram.sbi_col_4 #sbi_images .sbi_item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  #sb_instagram #sbi_images .sbi_item {
+    width: 50% !important;
+    .sbi_photo {
+      height: 50vw !important;
+    }
+  }
+}

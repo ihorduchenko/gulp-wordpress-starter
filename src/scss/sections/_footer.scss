@@ -1,0 +1,34 @@
+.ss-footer {
+  @include base-font;
+  font-size: 0.75rem;
+  margin-top: auto;
+  background-color: $cl-white;
+  a {
+    text-decoration: none;
+    line-height: 1.9;
+  }
+}
+
+.footer-nav {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.insta-feed {
+  position: relative;
+  &--cap {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 666;
+  }
+}
+
+.border-md-left {
+  @media (min-width: 768px) {
+    border-left: 1px solid $cl-line;
+  }
+}
